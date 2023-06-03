@@ -1,0 +1,8 @@
+.div {
+  color: rgba(50, 141, 50, 0.547);
+  display: flex;
+  align-items: center;
+  gap: 6vh;
+  flex-direction: row;
+  justify-content: center;
+}

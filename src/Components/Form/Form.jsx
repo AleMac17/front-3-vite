@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import styles from './form.module.css'
 
 const Form = ({ handlerCard }) => {
   const [nombreJuego, setNombreJuego] = useState('')
@@ -27,24 +28,26 @@ const Form = ({ handlerCard }) => {
   }
 
   return (
-    <div>
+    <>
       <form action='' onSubmit={handlerSubmit}>
-        <label htmlFor=''>Nombre del Video Juego</label>
+        <label htmlFor=''>Nombre del VideoJuego</label>
         <input
           type='text'
+          placeholder='The Binding of Isaac'
           value={nombreJuego}
           onChange={(e) => setNombreJuego(e.target.value)}
         />
-        <label htmlFor=''>Genero del Video Juego</label>
+        <label htmlFor=''>Genero del VideoJuego</label>
         <input
           type='text'
           value={generoJuego}
+          placeholder='El genero no importa: GOTY'
           onChange={(e) => setGeneroJuego(e.target.value)}
         />
         <button type='submit'>ENVIAR</button>
-        {error && <p>{error}</p>}
+        {error && <p className={styles.error}>{error}</p>}
       </form>
-    </div>
+    </>
   )
 }
 

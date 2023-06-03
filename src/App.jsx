@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import Card from'./Components/Card/Card'
-import Form from'./Components/Form/Form'
+import Card from './Components/Card/Card'
+import Form from './Components/Form/Form'
+import styles from './App.css'
 
 const App = () => {
   const [showCard, setShowCard] = useState(false)

@@ -1,0 +1,12 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50vw;
+  height: 27vh;
+  justify-content: space-evenly;
+}
+
+.error {
+  background-color: red;
+}
