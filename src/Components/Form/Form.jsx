@@ -5,7 +5,6 @@ const Form = ({ handlerCard }) => {
   const [nombreJuego, setNombreJuego] = useState('')
   const [generoJuego, setGeneroJuego] = useState('')
   const [error, setError] = useState('')
-  const [objetoJuego, setObjetoJuego] = useState({})
 
   const handlerSubmit = (e) => {
     e.preventDefault()
